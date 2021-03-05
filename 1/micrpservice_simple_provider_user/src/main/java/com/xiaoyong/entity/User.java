@@ -1,10 +1,7 @@
-package entity;
+package com.xiaoyong.entity;
 
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.math.BigDecimal;
 
 /**
@@ -13,6 +10,8 @@ import java.math.BigDecimal;
  *
  * @author dongxiaoyong
  */
+@Entity
+@Table(name = "user")
 public class User {
 
     @Id

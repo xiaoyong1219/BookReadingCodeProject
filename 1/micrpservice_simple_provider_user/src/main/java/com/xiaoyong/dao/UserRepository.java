@@ -1,6 +1,6 @@
-package dao;
+package com.xiaoyong.dao;
 
-import entity.User;
+import com.xiaoyong.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
