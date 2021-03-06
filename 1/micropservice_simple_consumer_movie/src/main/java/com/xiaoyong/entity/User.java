@@ -1,30 +1,18 @@
 package com.xiaoyong.entity;
 
-
-import javax.persistence.*;
 import java.math.BigDecimal;
 
 /**
- * Create By dongxiaoyong on /2021/3/5
+ * Create By dongxiaoyong on /2021/3/6
  * description: 用户实体
  *
  * @author dongxiaoyong
  */
-@Entity
-@Table(name = "user")
 public class User {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
-    @Column
     private String username;
-    @Column
     private String name;
-    @Column
     private Integer age;
-    @Column
     private BigDecimal balance;
 
     public Long getId() {
