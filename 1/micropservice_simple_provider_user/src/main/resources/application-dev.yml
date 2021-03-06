@@ -1,0 +1,21 @@
+server:
+  port: 8001
+spring:
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: create #create-每次启动都重新创建； none-启动时不自动执行
+  datasource: #指定数据源信息
+    platform: h2  #指定数据源类型
+    schema: classpath:/db/schme.sql #指定h2数据库的建表语句
+    data: classpath:/db/data.sql  #指定h2数据库的数据脚本
+
+#自定义 actuator info端点公开的数据 http://{ip}:{port}/info.*
+info:
+  app:
+    name: @project.artifactId@
+    encoding: @project.build.sourceEncoding@
+    java:
+      source: @java.version@
+      target: @java.version@

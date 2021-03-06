@@ -1,0 +1,15 @@
+
+server:
+  port: 8180
+
+#自定义 actuator info端点公开的数据 http://{ip}:{port}/info.*
+info:
+  app:
+    name: micropservice_simple_consumer_movie
+    encoding: UTF-8
+    java:
+      source: 1.8.0_40
+      target: 1.8.0_40
+
+user:
+  userServiceUrl: http://127.0.0.1:8001/user/
